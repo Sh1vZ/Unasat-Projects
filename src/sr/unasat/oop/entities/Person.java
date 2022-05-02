@@ -12,7 +12,7 @@ public class Person {
         this.name = naam;
         Random rand = new Random();
         int newId;
-        newId = rand.nextInt(0, 10000);
+        newId = rand.nextInt();
         this.id = newId;
     }
 
