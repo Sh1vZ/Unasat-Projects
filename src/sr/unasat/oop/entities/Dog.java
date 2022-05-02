@@ -3,13 +3,13 @@ package sr.unasat.oop.entities;
 
 public class Dog {
     String naam;
-    String owner;
-    public Dog(String name ,String owner) {
+    Person petOwner;
+    public Dog(String name ,Person owner) {
         this.naam = name;
-        this.owner = owner;
+        this.petOwner = owner;
     }
     public void getName() {
-        System.out.println("Naam: " + this.naam+"\nOwner: "+this.owner+"\n");
+        System.out.printf("\nDog:\nNaam:%s\nOwner:%s %s\n",this.naam,this.petOwner.name,this.petOwner.surname);
     }
 
 }

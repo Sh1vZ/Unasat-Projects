@@ -17,7 +17,7 @@ public class Person {
     }
 
     public void getName() {
-        System.out.println("ID: " + this.id + "\nNaam: " + this.name + "\nSurname: " + this.name+"\n");
+        System.out.printf("\nPerson:\nID:%d\nNaam:%s\nSurname:%s\n",this.id,this.name,this.surname);
     }
 
 }
